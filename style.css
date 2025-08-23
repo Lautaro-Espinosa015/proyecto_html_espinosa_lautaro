@@ -14,15 +14,31 @@
 
 .header {
   grid-area: header;
-  border: 2px black solid;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  align-items: center;        
+  justify-content: center;    
+  position: relative;         
+}
+
+.header-left {
+  position: absolute;         
+  left: 20px;                
+}
+
+.header-right h1 {
+  font-size: 40px;            
+  margin: 0;                  
+  text-align: center;         
+}
+
+.logo {
+  width: 100px;   
+  height: auto;   
 }
 
 .nav {
   grid-area: nav;
-  border: 2px green solid;
+  
 }
 
 .nav ul {
@@ -56,12 +72,12 @@
 
 .barra-lateral {
   grid-area: aside;
-  border: 2px blue solid;
+ 
 }
 
 .main {
   grid-area: main;
-  border: 2px gray solid;
+  
 }
 
 .product-container {
@@ -75,12 +91,17 @@
   width: 200px;
   text-align: center;
   text-decoration: none;
-  margin: 10px 66px 10px;
+  margin: 10px 60px 10px;
+}
+
+.product-card img {
+  width: 80%;
+  margin: 10px 15px 10px;
 }
 
 .footer {
   grid-area: footer;
-  border: 2px yellow solid;
+  
 }
 
 .footer-content {
@@ -90,8 +111,20 @@
   
 }
 
-.footer-section ul {
-    list-style: none;
+.footer-section{
+  font-size: 20px; 
 }
 
+.footer-section ul li {
+    list-style: none;
+    font-size: 15px; 
+}
+
+/* 
+
+Preguntar por el header necesito el nombre centrado y la imagen en la izq
+Preguntar por hacer más grande los encabezados del footer y no las listas
+Preguntar por poner en cuadrilla el main
+
+*/
 
